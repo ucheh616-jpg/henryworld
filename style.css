@@ -1,0 +1,168 @@
+/*general reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #051413;
+  --color-2: #031116;
+  --color-3: #162523;
+  --color-4: #1addd3;
+}
+
+body {
+  font-family: arial, sans-serif;
+  background-color: var(--color-1);
+  color: white;
+  line-height: 1.6;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a.active {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.hover {
+  color: var(--color-4);
+  text-decoration: none;
+}
+
+nav a.activated {
+  text-decoration: none;
+}
+
+nav a.attribute {
+  text-decoration: none;
+}
+
+nav a.activeness {
+  text-decoration: none;
+}
+
+nav a.activity {
+  text-decoration: none;
+}
+
+/*main section*/
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+
+.details {
+  max-width: 50%;
+}
+
+.details h1 {
+  font-size: 2.5em;
+}
+
+.highlight {
+  color: var(--color-4);
+}
+
+.social a {
+  font-size: 1.5em;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--color-4);
+}
+.images img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/*sections*/
+.section {
+  padding: 70px;
+  background-color: var(--color-3);
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.alternate {
+  background-color: var(--color-1);
+}
+
+.fun {
+  padding: 70px;
+  margin: 20px;
+  border-radius: 10%;
+  background-color: var(--color-4);
+}
+
+/*rating*/
+.rating button {
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background: #00aaff;
+  color: white;
+  border-radius: 5px;
+}
+
+.rating button:hover {
+  background: var(--color-4);
+}
+
+.aside {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/*footer*/
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--color-3);
+}
+
+/*gallery*/
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.gallery img {
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery img.hover {
+  transform: 0.3;
+}
+
+.gallery img.hover {
+  transform: (1.1);
+}

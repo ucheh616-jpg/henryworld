@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>welcome to Henry's world</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header and navigation-->
+    <header>
+      <div class="logo">UH</div>
+      <nav class="coding">
+        <a href="#home" class="active">home </a>
+        <a href="#about" class="activated">about</a>
+        <a href="#contact" class="activeness">contact</a>
+        <a href="#blogs" class="activity">blogs</a>
+        <a href="#rating" class="attribute">rating</a>
+      </nav>
+    </header>
+
+    <!--main profile section-->
+    <main>
+      <section id="home" class="main">
+        <div class="detail">
+          <h1>hi i'm <span class="highlight">Henry</span></h1>
+          <p>
+            welcome to my website,i am learning to code and this is my summer
+            holiday project🚀
+          </p>
+          <div class="social">
+            <a href="https://youtube.com/@uchehenry-vn1wm?si=ZL5n1apUzZiTh0Zu"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/sheluvshenry1?igsh=MWtmZnIxdWE2MWU3Zg=="
+            >
+              <i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.snapchat.com/add/urbabeluvshnry?share_id=RBd4hDcg_WI&locale=en-CN"
+              ><i class="fab fa-snapchat"></i
+            ></a>
+          </div>
+        </div>
+        <div class="images">
+          <img src="img/pic1.jpg" alt="" />
+        </div>
+      </section>
+
+      <!--other pages-->
+      <section id="pages">
+        <!--about section-->
+        <section class="section" id="about">
+          <h1>
+            About me
+            <p>
+              Hello! my name is uche henry , i love coding , playing games and
+              reading books this page is about I and my project⭐
+            </p>
+          </h1>
+        </section>
+
+        <!--blog section-->
+        <section id="blogs" class="section alternate">
+          <h1>My blogs</h1>
+          <article>
+            <h3>🌐 My first blog</h3>
+            <p>
+              Today i learnt how to build my first webpage using HTML,CSS and
+              JavaScript!
+            </p>
+          </article>
+          <article>
+            <h3>🎮My favorite game</h3>
+            <p>
+              I love playing minecraft because it helps me to be creative with
+              building things
+            </p>
+          </article>
+        </section>
+
+        <!--fun secton-->
+        <!--section class="fun " id="section">
+        <article>
+          <h3>😊my summer holiday</h3>
+          <p> well my summer holiday was really fun , 
+            what made it more fun was i went to programming class
+          </p>
+        </article>
+        <article>
+          <h4>my favorite food </h4>
+          <p>my favorite food is jealous rice cause it really nice</p>
+        </article >
+  
+
+      </section -->
+        <!--fun features-->
+        <section class="section">
+          <h2>🍿Fun corner</h2>
+          <button onclick="tellJoke()">tell me a joke</button>
+          <p id="joke"></p>
+        </section>
+
+        <!--background music-->
+        <section class="section">
+          <h2>My music playlist🎶</h2>
+          <!--playlist drop down-->
+          <select name="" id="musicselect" onchange="changeSong()">
+            <option value="audio/song1.mp3">Song 1</option>
+            <option value="audio/song2.mp3">Song 2</option>
+            <option value="audio/song3.mp3">Song 3</option>
+            <option value="audio/song4.mp3">Song 4</option>
+          </select>
+          <br />
+          <audio controls id="audioplayer">
+            <source src="audio/song1.mp3 " type="audio/mpeg" id="audiosource" />
+          </audio>
+        </section>
+
+        <!--theme color picker-->
+        <section class="section">
+          <h2>🎨change your theme</h2>
+          <input type="color" id="colorpicker" onchange="changeTheme()" />
+        </section>
+
+        <!--contact form-->
+        <section class="section alternate">
+          <h2>📞contact me</h2>
+          <!-- <a href="mail to : ucheh616@gmail.com"> -->
+          <form
+            action="mailto:ucheh616@gmail.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <label for="text">Enter your name:</label>
+            <input type="text" placeholder="Henry" id="names" required />
+            <br /><br />
+            <textarea
+              name="message"
+              id="namer"
+              placeholder="write a message"
+            ></textarea>
+            <br /><br />
+            <button type="submit" id="namers">send</button>
+          </form>
+          <p id="contactResult"></p>
+        </section>
+
+        <!--rating section-->
+        <section class="section">
+          <h2>Rate my website</h2>
+          <p>what do you think of my website? choosee a rating below</p>
+          <a href="mailto:ucheh616@gmail.com" class="rating">
+            <button id="rating1" onclick="rate()">⭐</button>
+            <button id="rating2" onclick="rate()">👍</button>
+            <button id="rating3" onclick="rate()">🔥</button>
+            <button id="rating4" onclick="rate()">🤩</button>
+          </a>
+          <p id=" ratingresult"></p>
+        </section>
+      </section>
+
+      <!--aside media-->
+      <aside>
+        <h3>👨‍👧‍👧photo gallery</h3>
+        <hr />
+        <div class="gallery">
+          <img src="img/pic2.jpg" alt="" />
+          <img src="img/pic3.jpg" alt="" />
+          <img src="img/pic4.jpg" alt="" />
+        </div>
+      </aside>
+    </main>
+    <!--footer-->
+    <footer>
+      <p>made with 💝 by henry | © 2025 summer holiday@cisnetacademics</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
