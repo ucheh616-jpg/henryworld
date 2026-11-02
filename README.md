@@ -58,3 +58,74 @@ I will practise programming every week.
 
 Activities A, B and C (IPO components, algorithms, pseudocode and flowcharts) were done on paper, as instructed, so they are not in this repository.
 
+---
+
+## Week 2: Development Environment and First Java Program
+
+### Objective
+
+To configure the Java development environment, write a simple Java program, compile it, execute it and submit the source code through GitHub.
+
+### Tools Used
+
+- Java Development Kit (JDK)
+- Visual Studio Code
+- Git
+- GitHub Desktop
+- GitHub
+
+### Files
+
+- `week02/HelloWorld.java`: the practical program. Displays three lines of text.
+- `week02/StudentProfile.java`: the personalized program. Displays my name, matric number, course and programme.
+- `week02/PrintExample.java`: practice exercise on the difference between `print()` and `println()`. My predicted output is written in a comment at the top of the file.
+- `week02/ErrorExample.java`: "Find and fix the error" exercise. The original was missing a semicolon, which caused the compiler error `';' expected`. This is the corrected version.
+
+### How to Run
+
+1. Open a terminal in the `week02` directory.
+2. Compile the program using `javac HelloWorld.java`.
+3. Run the program using `java HelloWorld`.
+
+The other programs are compiled and run the same way, for example `javac StudentProfile.java` then `java StudentProfile`.
+
+### Output
+
+**HelloWorld**
+
+```
+Hello, World!
+Welcome to COS 201.
+I am learning Java programming.
+```
+
+**StudentProfile**
+
+```
+NAME: Uche Chinedu Henry
+MATRIC NUMBER: 25/16511
+COURSE: COS 201
+COURSE TITLE: Computer Programming I
+PROGRAMME: Software Engineering
+WEEK: 2
+TOPIC: Development Environment and Java
+GOAL: To build useful software with Java, one practical at a time.
+```
+
+**PrintExample**
+
+```
+COS 201
+Java
+```
+
+**ErrorExample**
+
+```
+Learning Java
+```
+
+### Learning Outcome
+
+I set up the JDK, Visual Studio Code and Git, then created, compiled and ran Java programs and submitted the source code through GitHub. I learned that `print()` stays on the same line while `println()` moves to a new line, and how to read a compiler error message to find and fix a mistake.
+
